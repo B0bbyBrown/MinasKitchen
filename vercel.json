@@ -1,28 +1,29 @@
 {
   "version": 2,
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "builds": [
-    {
-      "src": "dist/index.js",
-      "use": "@vercel/node"
+  "outputDirectory": "server/public",
+  "functions": {
+    "api/donations.ts": {
+      "runtime": "@vercel/node"
+    },
+    "api/donation-stats.ts": {
+      "runtime": "@vercel/node"
+    },
+    "api/impact-metrics.ts": {
+      "runtime": "@vercel/node"
+    },
+    "api/test.ts": {
+      "runtime": "@vercel/node"
     }
-  ],
+  },
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/dist/index.js"
-    },
-    {
-      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot))",
-      "dest": "/server/public/$1"
+      "dest": "/api/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/server/public/index.html"
+      "dest": "/index.html"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  }
+  ]
 }
