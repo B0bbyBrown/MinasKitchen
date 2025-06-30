@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 47 8% 97%; /* #F7F5F3 */
+  --foreground: 211 25% 20%; /* #2C3E50 */
+  --muted: 210 40% 98%;
+  --muted-foreground: 215 16% 47%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 211 25% 20%;
+  --card: 0 0% 100%;
+  --card-foreground: 211 25% 20%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --primary: 11 65% 50%; /* #C6553A */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 39 77% 67%; /* #F4A261 */
+  --secondary-foreground: 211 25% 20%;
+  --accent: 10 71% 62%; /* #E76F51 */
+  --accent-foreground: 210 40% 98%;
+  --success: 173 58% 39%; /* #2A9D8F */
+  --success-foreground: 210 40% 98%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 11 65% 50%;
+  --radius: 0.5rem;
+  --neutral: 184 25% 25%; /* #264653 */
+  --warm-bg: 47 8% 97%; /* #F7F5F3 */
+  --text-primary: 211 25% 20%; /* #2C3E50 */
+}
+
+.dark {
+  --background: 224 71% 4%;
+  --foreground: 213 31% 91%;
+  --muted: 223 47% 11%;
+  --muted-foreground: 215 14% 65%;
+  --popover: 224 71% 4%;
+  --popover-foreground: 213 31% 91%;
+  --card: 224 71% 4%;
+  --card-foreground: 213 31% 91%;
+  --border: 216 34% 17%;
+  --input: 216 34% 17%;
+  --primary: 11 65% 50%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 39 77% 67%;
+  --secondary-foreground: 211 25% 20%;
+  --accent: 10 71% 62%;
+  --accent-foreground: 210 40% 98%;
+  --success: 173 58% 39%;
+  --success-foreground: 210 40% 98%;
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 213 31% 91%;
+  --ring: 11 65% 50%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: "Inter", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .font-script {
+    font-family: "Dancing Script", cursive;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--primary)),
+      hsl(var(--accent))
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      135deg,
+      hsla(var(--neutral), 0.8),
+      hsla(var(--primary), 0.6)
+    );
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-accent text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-out hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--accent)),
+      hsl(var(--primary))
+    );
+    box-shadow: 0 8px 20px hsla(var(--primary), 0.3);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .card-hover:hover {
+    @apply transform -translate-y-2 shadow-xl;
+  }
+
+  .progress-bar {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--success)),
+      hsl(var(--secondary))
+    );
+  }
+
+  .number-counter {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .warm-bg {
+    background-color: hsl(var(--warm-bg));
+  }
+
+  .text-neutral {
+    color: hsl(var(--neutral));
+  }
+
+  .bg-neutral {
+    background-color: hsl(var(--neutral));
+  }
+
+  .text-success {
+    color: hsl(var(--success));
+  }
+
+  .bg-success {
+    background-color: hsl(var(--success));
+  }
+
+  .border-success {
+    border-color: hsl(var(--success));
+  }
+
+  .bg-success\/10 {
+    background-color: hsla(var(--success), 0.1);
+  }
+
+  .bg-primary\/10 {
+    background-color: hsla(var(--primary), 0.1);
+  }
+
+  .bg-secondary\/10 {
+    background-color: hsla(var(--secondary), 0.1);
+  }
+
+  .bg-accent\/10 {
+    background-color: hsla(var(--accent), 0.1);
+  }
+
+  .border-primary\/20 {
+    border-color: hsla(var(--primary), 0.2);
+  }
+
+  .border-secondary\/20 {
+    border-color: hsla(var(--secondary), 0.2);
+  }
+
+  .border-success\/20 {
+    border-color: hsla(var(--success), 0.2);
+  }
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.7s ease-out;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.7s ease-out;
+  }
+
+  .animate-bounce-gentle {
+    animation: bounceGentle 2s infinite;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes bounceGentle {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+  .backdrop-blur-sm {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+}
