@@ -108,8 +108,8 @@ export default function Footer() {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
           <p>
-            &copy; 2024 Mina's Kitchen. All rights reserved. • Founded April
-            2024 • Nonprofit registration pending
+            &copy; 2025 Mina's Kitchen. All rights reserved. • Founded April
+            2025 • Nonprofit registration pending
           </p>
         </div>
       </div>
