@@ -7,7 +7,14 @@ import { X, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 import { insertDonationSchema, type InsertDonation } from "@shared/schema";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
@@ -57,7 +64,7 @@ export default function DonationModal({}: DonationModalProps) {
     const handleOpenModal = (event: Event) => {
       const customEvent = event as CustomEvent;
       setIsOpen(true);
-      
+
       if (customEvent.detail) {
         if (customEvent.detail.amount) {
           form.setValue("amount", customEvent.detail.amount.toString());
@@ -68,19 +75,20 @@ export default function DonationModal({}: DonationModalProps) {
       }
     };
 
-    window.addEventListener('openDonationModal', handleOpenModal);
-    return () => window.removeEventListener('openDonationModal', handleOpenModal);
+    window.addEventListener("openDonationModal", handleOpenModal);
+    return () =>
+      window.removeEventListener("openDonationModal", handleOpenModal);
   }, [form]);
 
   useEffect(() => {
     const handleEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape' && isOpen) {
+      if (event.key === "Escape" && isOpen) {
         setIsOpen(false);
       }
     };
 
-    document.addEventListener('keydown', handleEscape);
-    return () => document.removeEventListener('keydown', handleEscape);
+    document.addEventListener("keydown", handleEscape);
+    return () => document.removeEventListener("keydown", handleEscape);
   }, [isOpen]);
 
   const handleBackdropClick = (event: React.MouseEvent) => {
@@ -112,17 +120,23 @@ export default function DonationModal({}: DonationModalProps) {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex justify-between items-center mb-6">
-              <h3 className="font-bold text-2xl text-neutral">Make a Donation</h3>
+              <h3 className="font-bold text-2xl text-neutral">
+                Make a Donation
+              </h3>
               <button
                 onClick={() => setIsOpen(false)}
                 className="text-gray-500 hover:text-gray-700 text-2xl"
+                title="Close"
               >
                 <X />
               </button>
             </div>
 
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+              <form
+                onSubmit={form.handleSubmit(onSubmit)}
+                className="space-y-4"
+              >
                 <FormField
                   control={form.control}
                   name="amount"
@@ -190,12 +204,14 @@ export default function DonationModal({}: DonationModalProps) {
                     <FormItem className="flex flex-row items-start space-x-3 space-y-0">
                       <FormControl>
                         <Checkbox
-                          checked={field.value}
+                          checked={field.value ?? false}
                           onCheckedChange={field.onChange}
                         />
                       </FormControl>
                       <div className="space-y-1 leading-none">
-                        <FormLabel>Make this a monthly recurring donation</FormLabel>
+                        <FormLabel>
+                          Make this a monthly recurring donation
+                        </FormLabel>
                       </div>
                     </FormItem>
                   )}
@@ -207,12 +223,15 @@ export default function DonationModal({}: DonationModalProps) {
                   className="w-full btn-primary py-4 rounded-xl font-bold text-lg mb-4"
                 >
                   <Heart className="mr-2" />
-                  {createDonationMutation.isPending ? "Processing..." : "Donate Now"}
+                  {createDonationMutation.isPending
+                    ? "Processing..."
+                    : "Donate Now"}
                 </Button>
 
                 <p className="text-xs text-gray-500 text-center">
-                  Your donation is secure and will be processed through our trusted payment partner. 
-                  You'll receive a confirmation email with your tax receipt.
+                  Your donation is secure and will be processed through our
+                  trusted payment partner. You'll receive a confirmation email
+                  with your tax receipt.
                 </p>
               </form>
             </Form>

@@ -18,7 +18,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="min-h-screen h-screen flex">
+    <section className="min-h-[92vh] h-[92vh] flex">
       {/* Left third - Clean MP4 Video Only */}
       <div className="w-1/3 h-full relative overflow-hidden flex items-center justify-center bg-black">
         <video
@@ -27,9 +27,8 @@ export default function HeroSection() {
           loop
           muted
           playsInline
-          style={{ height: "100%" }}
         >
-          <source src="/Download.mp4" type="video/mp4" />
+          <source src="/HeroVideo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

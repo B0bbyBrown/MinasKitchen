@@ -31,9 +31,9 @@ export default function StorySection() {
               viewport={{ once: true }}
             >
               <img
-                src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                src="/Story.jpg"
                 alt="Mina in the kitchen"
-                className="rounded-3xl shadow-2xl w-full"
+                className="rounded-3xl shadow-2xl w-full h-full object-cover"
               />
             </motion.div>
 
