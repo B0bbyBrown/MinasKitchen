@@ -65,7 +65,7 @@ export default function ImpactMetrics() {
             delay={0}
           />
           <MetricCard
-            value={`${metrics?.childrenFed || 500}`}
+            value={`${metrics?.childrenFed || 500}+-`}
             label="Kids Fed Weekly"
             delay={0.1}
           />

@@ -23,9 +23,6 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="font-bold text-xl">Mina's Kitchen</h3>
-                <p className="text-sm text-gray-400">
-                  Believe to receive, live to give
-                </p>
               </div>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">

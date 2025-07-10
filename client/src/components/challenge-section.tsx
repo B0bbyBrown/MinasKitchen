@@ -7,7 +7,7 @@ export default function ChallengeSection() {
   const { data: stats } = useDonationStats();
 
   const challengeGoal = 150000;
-  const currentAmount = 56423;
+  const currentAmount = 73603;
   const challengePercentage = Math.min(
     (currentAmount / challengeGoal) * 100,
     100

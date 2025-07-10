@@ -7,7 +7,7 @@ export default function HeroSection() {
   const { data: stats } = useDonationStats();
 
   const goal = 150000; // R150k challenge
-  const currentAmount = 56423; // Total so far R56,423
+  const currentAmount = 73603; // Total so far R56,423
   const progressPercentage = (currentAmount / goal) * 100;
 
   const handleDonateClick = () => {
@@ -53,7 +53,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Nourishing South Africa's Future
+            Donate <br /> Feed <br /> Empower
           </motion.h1>
 
           <motion.p
@@ -64,6 +64,31 @@ export default function HeroSection() {
           >
             12,000+ meals served since April 2024.
           </motion.p>
+
+          {/* Progress toward goal */}
+          <motion.div
+            className="mb-8"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+          >
+            <div className="flex justify-between items-center mb-4">
+              <span className="text-neutral font-semibold text-lg">
+                Crowdfunding Progress{" 49%"}
+              </span>
+              <span className="text-neutral font-bold text-xl">
+                R {currentAmount.toLocaleString()} / R {goal.toLocaleString()}
+              </span>
+            </div>
+            <div className="w-full bg-gray-200 rounded-full h-6 mb-4">
+              <motion.div
+                className="progress-bar h-6 rounded-full"
+                initial={{ width: 0 }}
+                animate={{ width: `${progressPercentage}%` }}
+                transition={{ duration: 1.5, delay: 0.8 }}
+              />
+            </div>
+          </motion.div>
 
           {/* Impact Stats */}
           <motion.div
@@ -82,7 +107,7 @@ export default function HeroSection() {
             <div className="text-center">
               <div className="flex items-center justify-center mb-2">
                 <Users className="w-5 h-5 text-accent mr-2" />
-                <span className="font-bold text-2xl text-neutral">500</span>
+                <span className="font-bold text-2xl text-neutral">500+-</span>
               </div>
               <span className="text-sm text-gray-600">Children Weekly</span>
             </div>
@@ -93,34 +118,6 @@ export default function HeroSection() {
               </div>
               <span className="text-sm text-gray-600">Women Employed</span>
             </div>
-          </motion.div>
-
-          {/* Progress toward goal */}
-          <motion.div
-            className="mb-8"
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-          >
-            <div className="flex justify-between items-center mb-4">
-              <span className="text-neutral font-semibold text-lg">
-                Crowdfunding Progress
-              </span>
-              <span className="text-neutral font-bold text-xl">
-                R {currentAmount.toLocaleString()} / R {goal.toLocaleString()}
-              </span>
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-6 mb-4">
-              <motion.div
-                className="progress-bar h-6 rounded-full"
-                initial={{ width: 0 }}
-                animate={{ width: `${progressPercentage}%` }}
-                transition={{ duration: 1.5, delay: 0.8 }}
-              />
-            </div>
-            <p className="text-gray-800 text-right">
-              {Math.round(progressPercentage)}% funded • R150k challenge
-            </p>
           </motion.div>
 
           {/* Donate Now Button */}

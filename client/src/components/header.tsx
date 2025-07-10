@@ -37,10 +37,12 @@ export default function Header({ onOpenDonationModal }: HeaderProps) {
               />
             </div>
             <div>
-              <h1 className="font-bold text-xl text-neutral">Mina's Kitchen</h1>
-              <p className="text-sm text-gray-600 font-script">
+              <h1 className="font-bold text-2xl text-neutral">
+                Mina's Kitchen
+              </h1>
+              {/* <p className="text-sm text-gray-600 font-">
                 Believe to receive, live to give
-              </p>
+              </p> */}
             </div>
           </div>
 
