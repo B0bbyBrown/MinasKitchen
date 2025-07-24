@@ -7,102 +7,86 @@ const communityImpactPhotos = [
   {
     src: "/images/IMG_0038.jpg",
     alt: "Sizzle & Pop!",
-    description:
-      "Close-up of food, possibly potatoes or chicken, being deep-fried in a large pot, showing active cooking and meal preparation.",
+    description: "Freshly fried for you!",
   },
   {
     src: "/images/IMG_0060.jpg",
     alt: "BBQ Master at Work",
-    description:
-      "Close-up of chicken pieces being grilled on a barbecue, with smoke rising, highlighting outdoor meal preparation.",
+    description: "Grilled with love!",
   },
   {
     src: "/images/_MG_0042.jpg",
     alt: "Rainbow Rice Delight",
-    description:
-      "Close-up of a large quantity of cooked rice mixed with colorful vegetables like peas, carrots, and corn, ready for serving.",
+    description: "A bowl full of color!",
   },
   {
     src: "/images/IMG_0089.jpg",
     alt: "Mission Statement",
-    description:
-      "Another shot of the back of a person wearing the same 'Believe to Receive Live to Give' t-shirt, reinforcing the message.",
+    description: "Hearts in action.",
   },
   // 2. Packaging Phase
   {
     src: "/images/IMG_0497.JPG",
     alt: "Meal Prep Magic",
-    description:
-      "Neatly stacked white styrofoam food containers on a table, ready for packaging or distribution of meals.",
+    description: "Ready to share!",
   },
   {
     src: "/images/IMG_0459.jpg",
     alt: "Rice & Smiles Bowl",
-    description:
-      "Rows of white styrofoam containers, each filled with a complete meal of rice and a side dish, prepared for distribution.",
+    description: "Smiles in every bite!",
   },
   // 3. Community Gathering & Waiting
   {
     src: "/images/IMG_0054.jpg",
     alt: "The Waiting Game",
-    description:
-      "A group of children standing together outdoors, suggesting a gathering or queue for an event or meal distribution.",
+    description: "Worth the wait!",
   },
   {
     src: "/images/IMG_0085.jpg",
     alt: "Queue Champions",
-    description:
-      "A diverse group of people, including children and adults, standing in a line against a wall, indicating a waiting area for services or meals.",
+    description: "Patience and excitement!",
   },
   {
     src: "/images/IMG_0299.jpg",
     alt: "The Great Food Line",
-    description:
-      "An aerial view of a long queue of children and adults waiting patiently outdoors, guided by barriers, for meal distribution.",
+    description: "Everyone’s welcome!",
   },
   {
     src: "/images/IMG_0590.jpg",
     alt: "Queue Crew",
-    description:
-      "Lower body view of several individuals standing in a line, illustrating a queue for food or services.",
+    description: "Friends in line!",
   },
   // 4. Distribution & Community Interaction
   {
     src: "/images/IMG_0455.jpg",
     alt: "Community Vibes",
-    description:
-      "A wide shot of a large community gathering outdoors, with many children and some adults, likely for a meal distribution event.",
+    description: "Together is better!",
   },
   {
     src: "/images/IMG_0548.jpg",
     alt: "Distribution Hands",
-    description:
-      "Shows people, including children, receiving food from a distribution point, with hands reaching out for the meals.",
+    description: "Hands that help!",
   },
   // 5. Receiving & Eating
   {
     src: "/images/IMG_0437.jpg",
     alt: "Step-by-Step Happiness",
-    description:
-      "Two young boys sitting on steps, happily eating meals from white containers, illustrating direct food service to children in need.",
+    description: "Happy tummies, happy hearts!",
   },
   {
     src: "/images/IMG_0146.JPG",
     alt: "Meal Time Joy",
-    description:
-      "A close-up of a person, possibly a child, eating from a white takeaway container, showcasing the positive impact.",
+    description: "Yum!",
   },
   {
     src: "/images/_MG_0019.jpg",
     alt: "Living the Motto",
-    description:
-      "Back view of a person wearing a white t-shirt with the motto 'Believe to Receive Live to Give', symbolizing the organization's mission.",
+    description: "Giving is living!",
   },
   {
     src: "/images/IMG_0426.jpg",
     alt: "Kitchen Team Spirit",
-    description:
-      "Additional kitchen activities showing the team working together to prepare meals for the community.",
+    description: "Teamwork makes the dream work!",
   },
 ];
 
