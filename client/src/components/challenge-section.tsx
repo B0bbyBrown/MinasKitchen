@@ -7,7 +7,7 @@ export default function ChallengeSection() {
   const { data: stats } = useDonationStats();
 
   const challengeGoal = 150000;
-  const currentAmount = 73603;
+  const currentAmount = 61943;
   const challengePercentage = Math.min(
     (currentAmount / challengeGoal) * 100,
     100
@@ -42,7 +42,7 @@ export default function ChallengeSection() {
               viewport={{ once: true }}
             >
               <Target className="inline mr-4" />
-              First R150K Challenge
+              First R150K Fundraising Challenge
             </motion.h2>
 
             <motion.p

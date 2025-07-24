@@ -7,7 +7,7 @@ export default function HeroSection() {
   const { data: stats } = useDonationStats();
 
   const goal = 150000; // R150k challenge
-  const currentAmount = 73603; // Total so far R56,423
+  const currentAmount = 61943; // Total so far R56,423
   const progressPercentage = (currentAmount / goal) * 100;
 
   const handleDonateClick = () => {
