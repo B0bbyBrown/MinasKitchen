@@ -1,92 +1,108 @@
 import { motion } from "framer-motion";
 import { useState, useMemo } from "react";
 
-// 16 images reordered to match the actual story flow
+// Updated with all available images from client/public/images
 const communityImpactPhotos = [
   // 1. Food Preparation Phase
   {
-    src: "/images/IMG_0038.jpg",
+    src: "/images/IMG_0038.png",
     alt: "Sizzle & Pop!",
     description: "Freshly fried for you!",
+    position: "col-span-1 row-span-1",
   },
   {
-    src: "/images/IMG_0060.jpg",
+    src: "/images/IMG_0060.png",
     alt: "BBQ Master at Work",
     description: "Grilled with love!",
+    position: "col-span-1 row-span-1",
   },
   {
-    src: "/images/_MG_0042.jpg",
+    src: "/images/IMG_0482.png",
     alt: "Rainbow Rice Delight",
     description: "A bowl full of color!",
+    position: "col-span-1 row-span-1",
   },
   {
-    src: "/images/IMG_0089.jpg",
+    src: "/images/IMG_0089.png",
     alt: "Mission Statement",
     description: "Hearts in action.",
+    position: "col-span-1 row-span-1",
   },
   // 2. Packaging Phase
   {
-    src: "/images/IMG_0497.JPG",
+    src: "/images/IMG_0471.png",
     alt: "Meal Prep Magic",
     description: "Ready to share!",
+    position: "col-span-1 row-span-1",
   },
   {
-    src: "/images/IMG_0459.jpg",
+    src: "/images/IMG_0462.png",
     alt: "Rice & Smiles Bowl",
     description: "Smiles in every bite!",
+    position: "col-span-1 row-span-1",
   },
   // 3. Community Gathering & Waiting
   {
-    src: "/images/IMG_0054.jpg",
+    src: "/images/IMG_0427.png",
     alt: "The Waiting Game",
     description: "Worth the wait!",
+    position: "col-span-1 row-span-1",
   },
   {
-    src: "/images/IMG_0085.jpg",
+    src: "/images/IMG_0085.png",
     alt: "Queue Champions",
     description: "Patience and excitement!",
+    position: "col-span-1 row-span-1",
   },
   {
-    src: "/images/IMG_0299.jpg",
+    src: "/images/IMG_0522.png",
     alt: "The Great Food Line",
-    description: "Everyone’s welcome!",
+    description: "Everyone's welcome!",
+    position: "col-span-1 row-span-1",
   },
   {
-    src: "/images/IMG_0590.jpg",
+    src: "/images/IMG_0372 1.png",
     alt: "Queue Crew",
     description: "Friends in line!",
+    position: "col-span-1 row-span-1",
   },
   // 4. Distribution & Community Interaction
   {
-    src: "/images/IMG_0455.jpg",
+    src: "/images/IMG_0125 1.png",
     alt: "Community Vibes",
     description: "Together is better!",
+    position: "col-span-1 row-span-1",
   },
   {
-    src: "/images/IMG_0548.jpg",
+    src: "/images/IMG_0548.png",
     alt: "Distribution Hands",
     description: "Hands that help!",
+    position: "col-span-1 row-span-1",
   },
   // 5. Receiving & Eating
   {
-    src: "/images/IMG_0437.jpg",
+    src: "/images/IMG_0437.png",
     alt: "Step-by-Step Happiness",
     description: "Happy tummies, happy hearts!",
+    position: "col-span-1 row-span-1",
   },
   {
-    src: "/images/IMG_0146.JPG",
+    src: "/images/IMG_0146.png",
     alt: "Meal Time Joy",
     description: "Yum!",
+    position: "col-span-1 row-span-1",
   },
   {
-    src: "/images/_MG_0019.jpg",
+    src: "/images/_MG_0019.png",
     alt: "Living the Motto",
     description: "Giving is living!",
+    position: "col-span-1 row-span-1",
   },
   {
-    src: "/images/IMG_0426.jpg",
+    src: "/images/IMG_0087 1.png",
     alt: "Kitchen Team Spirit",
     description: "Teamwork makes the dream work!",
+    position: "col-span-1 row-span-1",
   },
 ];
 
@@ -134,7 +150,7 @@ export default function CommunityImpactGallery() {
         {communityImpactPhotos.map((photo, index) => (
           <motion.div
             key={index}
-            className="group relative overflow-hidden rounded-lg shadow-md bg-gray-100"
+            className={`group relative overflow-hidden rounded-lg shadow-md bg-gray-100 ${photo.position}`}
             variants={itemVariants}
             whileHover={{ y: -2 }}
             transition={{ duration: 0.15 }}
