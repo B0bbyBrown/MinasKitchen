@@ -141,7 +141,7 @@ export default function CommunityImpactGallery() {
   const photoGrid = useMemo(
     () => (
       <motion.div
-        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -159,7 +159,7 @@ export default function CommunityImpactGallery() {
               <img
                 src={photo.src}
                 alt={photo.alt}
-                className={`w-full h-80 object-cover object-top transition-transform duration-200 group-hover:scale-102 ${
+                className={`w-full h-64 sm:h-72 md:h-80 object-cover object-top transition-transform duration-200 group-hover:scale-102 ${
                   loadedImages.has(index) ? "opacity-100" : "opacity-0"
                 }`}
                 loading="lazy"

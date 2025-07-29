@@ -32,19 +32,6 @@ export default function Footer() {
               Africa.
             </p>
           </div>
-
-          {/* Contact Section - 1 column */}
-          <div className="md:col-span-1">
-            <h4 className="font-semibold text-lg mb-4 text-gray-600">
-              Contact
-            </h4>
-            <ul className="space-y-1 text-gray-400 text-sm">
-              <li>Smutsville, Sedgefield</li>
-              <li>Western Cape, South Africa</li>
-              <li>minaskitchensedgefield@gmail.com</li>
-            </ul>
-          </div>
-
           {/* Quick Links Section - 1 column */}
           <div className="md:col-span-1">
             <h4 className="font-semibold text-lg mb-4 text-gray-600">
@@ -67,22 +54,26 @@ export default function Footer() {
                   Impact
                 </button>
               </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection("donate")}
-                  className="hover:text-black transition-colors"
-                >
-                  Donate
-                </button>
-              </li>
+
               <li>
                 <button
                   onClick={() => scrollToSection("challenge")}
                   className="hover:text-black transition-colors"
                 >
-                  100K Challenge
+                  150K Challenge
                 </button>
               </li>
+            </ul>
+          </div>
+          {/* Contact Section - 1 column */}
+          <div className="md:col-span-1">
+            <h4 className="font-semibold text-lg mb-4 text-gray-600">
+              Contact
+            </h4>
+            <ul className="space-y-1 text-gray-400 text-sm">
+              <li>Smutsville, Sedgefield</li>
+              <li>Western Cape, South Africa</li>
+              <li>minaskitchensedgefield@gmail.com</li>
             </ul>
           </div>
 
@@ -116,7 +107,7 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
           <p>
             &copy; 2025 Mina's Kitchen. All rights reserved. • Founded April
-            2025
+            2024
           </p>
         </div>
       </div>
