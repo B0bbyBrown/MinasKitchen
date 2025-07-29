@@ -49,23 +49,18 @@ export default function Header({ onOpenDonationModal }: HeaderProps) {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6 ml-auto">
             <button
-              onClick={() => scrollToSection("about")}
-              className="text-neutral hover:text-primary transition-colors"
-            >
-              About
-            </button>
-            <button
               onClick={() => scrollToSection("impact")}
               className="text-neutral hover:text-primary transition-colors"
             >
               Impact
             </button>
             <button
-              onClick={() => scrollToSection("donate")}
+              onClick={() => scrollToSection("about")}
               className="text-neutral hover:text-primary transition-colors"
             >
-              How to Help
+              About
             </button>
+
             <Button onClick={handleDonateClick} className="btn-primary">
               Donate Now
             </Button>

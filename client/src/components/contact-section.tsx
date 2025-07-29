@@ -57,7 +57,7 @@ export default function ContactSection() {
                 className="inline-flex items-center text-secondary font-semibold hover:text-white transition-colors"
               >
                 <Mail className="mr-2" />
-                shulka@curiouscatcreative.com
+                minaskitchensedgefield@gmail.com
               </button>
             </motion.div>
           </div>

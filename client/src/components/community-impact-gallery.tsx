@@ -165,7 +165,6 @@ export default function CommunityImpactGallery() {
                 loading="lazy"
                 onLoad={() => handleImageLoad(index)}
                 decoding="async"
-                fetchPriority="high"
                 style={{
                   imageRendering: "crisp-edges",
                 }}
