@@ -19,8 +19,10 @@ export default function HeroSection() {
 
   return (
     <section>
-      {/* SEO-friendly H1 tag - hidden visually but accessible to search engines */}
-      <h1 className="sr-only">Mina's Kitchen – Feeding Smutsville's Future</h1>
+      {/* SEO-friendly H1 tag - visible to search engines but styled to match design */}
+      <h1 className="absolute top-0 left-0 w-0 h-0 overflow-hidden opacity-0 pointer-events-none">
+        Mina's Kitchen – Feeding Smutsville's Future
+      </h1>
       {/* Mobile/Tablet Layout - Video Full Screen */}
       <div className="lg:hidden">
         {/* Full Screen Video */}
@@ -238,6 +240,49 @@ export default function HeroSection() {
                 Donate Now
               </Button>
             </motion.div>
+
+            {/* Quick Navigation Links */}
+            <motion.div
+              className="text-center mt-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.8 }}
+            >
+              <div className="flex flex-wrap justify-center gap-4 text-sm">
+                <button
+                  onClick={() =>
+                    document
+                      .getElementById("about")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
+                  className="text-primary hover:text-primary/80 underline transition-colors"
+                >
+                  Our Story
+                </button>
+                <span className="text-gray-400">•</span>
+                <button
+                  onClick={() =>
+                    document
+                      .getElementById("impact")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
+                  className="text-primary hover:text-primary/80 underline transition-colors"
+                >
+                  Our Impact
+                </button>
+                <span className="text-gray-400">•</span>
+                <button
+                  onClick={() =>
+                    document
+                      .getElementById("donate")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
+                  className="text-primary hover:text-primary/80 underline transition-colors"
+                >
+                  How to Help
+                </button>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>
@@ -370,6 +415,49 @@ export default function HeroSection() {
                 <Heart className="mr-3 text-xl" />
                 Donate Now
               </Button>
+            </motion.div>
+
+            {/* Quick Navigation Links */}
+            <motion.div
+              className="text-right mt-6"
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 1.2 }}
+            >
+              <div className="flex justify-end gap-4 text-sm">
+                <button
+                  onClick={() =>
+                    document
+                      .getElementById("about")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
+                  className="text-primary hover:text-primary/80 underline transition-colors"
+                >
+                  Our Story
+                </button>
+                <span className="text-gray-400">•</span>
+                <button
+                  onClick={() =>
+                    document
+                      .getElementById("impact")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
+                  className="text-primary hover:text-primary/80 underline transition-colors"
+                >
+                  Our Impact
+                </button>
+                <span className="text-gray-400">•</span>
+                <button
+                  onClick={() =>
+                    document
+                      .getElementById("donate")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
+                  className="text-primary hover:text-primary/80 underline transition-colors"
+                >
+                  How to Help
+                </button>
+              </div>
             </motion.div>
           </div>
         </div>
