@@ -19,6 +19,8 @@ export default function HeroSection() {
 
   return (
     <section>
+      {/* SEO-friendly H1 tag - hidden visually but accessible to search engines */}
+      <h1 className="sr-only">Mina's Kitchen – Feeding Smutsville's Future</h1>
       {/* Mobile/Tablet Layout - Video Full Screen */}
       <div className="lg:hidden">
         {/* Full Screen Video */}

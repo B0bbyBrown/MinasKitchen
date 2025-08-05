@@ -63,6 +63,14 @@ export default function Footer() {
                   150K Challenge
                 </button>
               </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection("donate")}
+                  className="hover:text-black transition-colors"
+                >
+                  Donate
+                </button>
+              </li>
             </ul>
           </div>
           {/* Contact Section - 1 column */}
