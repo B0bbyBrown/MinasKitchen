@@ -159,45 +159,6 @@ export default function ImpactMetrics() {
             </motion.div>
           </div>
         </motion.div>
-
-        {/* External Links Section for SEO */}
-        <motion.div
-          className="mt-16 text-center"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <h3 className="font-bold text-2xl text-neutral mb-6">
-            Learn More About Our Mission
-          </h3>
-          <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <a
-              href="https://www.backabuddy.co.za/campaign/help-feed-500-kids-with-minas-kitchen"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:text-primary/80 underline transition-colors"
-            >
-              Our BackaBuddy Campaign
-            </a>
-            <span className="text-gray-400">•</span>
-            <a
-              href="https://www.tiktok.com/@minaskitchensa"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:text-primary/80 underline transition-colors"
-            >
-              Follow Our Journey on TikTok
-            </a>
-            <span className="text-gray-400">•</span>
-            <a
-              href="mailto:minaskitchensedgefield@gmail.com"
-              className="text-primary hover:text-primary/80 underline transition-colors"
-            >
-              Contact Us
-            </a>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
