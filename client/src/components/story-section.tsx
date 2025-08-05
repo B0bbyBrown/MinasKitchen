@@ -16,10 +16,10 @@ export default function StorySection() {
             viewport={{ once: true }}
           >
             <h2 className="font-bold text-4xl md:text-5xl mb-4 text-secondary">
-              Our Visionary Women
+              Our Story
             </h2>
             <p className="text-xl text-black max-w-3xl mx-auto">
-              Driving the Direction
+              From Struggle to Community Impact
             </p>
           </motion.div>
 
