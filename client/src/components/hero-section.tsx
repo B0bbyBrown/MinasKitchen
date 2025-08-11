@@ -34,7 +34,10 @@ export default function HeroSection() {
             muted
             playsInline
           >
-            <source src="/HeroVideo.mp4" type="video/mp4" />
+            <source
+              src="https://youtube.com/shorts/GaaY53nvQkI?si=E51uCPlkyViRcmtC"
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
 
@@ -89,7 +92,7 @@ export default function HeroSection() {
                     Crowdfunding Progress
                   </span>
                   <span className="text-neutral font-bold text-lg sm:text-xl">
-                    49%
+                    41%
                   </span>
                 </div>
                 <div className="flex justify-center sm:justify-end items-center gap-2">
