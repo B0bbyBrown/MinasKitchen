@@ -6,8 +6,8 @@ import { useDonationStats } from "@/hooks/use-donation-stats";
 export default function HeroSection() {
   const { data: stats } = useDonationStats();
 
-  const goal = 150000; // R150k challenge
-  const currentAmount = 61943; // Total so far R56,423
+  const goal = 150000;
+  const currentAmount = 61943;
   const progressPercentage = (currentAmount / goal) * 100;
 
   const handleDonateClick = () => {
@@ -97,10 +97,10 @@ export default function HeroSection() {
                 </div>
                 <div className="flex justify-center sm:justify-end items-center gap-2">
                   <span className="text-neutral font-bold text-base sm:text-xl">
-                    R {currentAmount.toLocaleString()}
+                    R 61, 943
                   </span>
                   <span className="text-neutral font-semibold text-sm sm:text-lg">
-                    / R {goal.toLocaleString()}
+                    / R 150,000
                   </span>
                 </div>
               </div>
@@ -243,49 +243,6 @@ export default function HeroSection() {
                 Donate Now
               </Button>
             </motion.div>
-
-            {/* Quick Navigation Links */}
-            <motion.div
-              className="text-center mt-8"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.8 }}
-            >
-              <div className="flex flex-wrap justify-center gap-4 text-sm">
-                <button
-                  onClick={() =>
-                    document
-                      .getElementById("about")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                  className="text-primary hover:text-primary/80 underline transition-colors"
-                >
-                  Our Story
-                </button>
-                <span className="text-gray-400">•</span>
-                <button
-                  onClick={() =>
-                    document
-                      .getElementById("impact")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                  className="text-primary hover:text-primary/80 underline transition-colors"
-                >
-                  Our Impact
-                </button>
-                <span className="text-gray-400">•</span>
-                <button
-                  onClick={() =>
-                    document
-                      .getElementById("donate")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                  className="text-primary hover:text-primary/80 underline transition-colors"
-                >
-                  How to Help
-                </button>
-              </div>
-            </motion.div>
           </motion.div>
         </div>
       </div>
@@ -347,7 +304,7 @@ export default function HeroSection() {
             >
               <div className="flex justify-between items-center mb-4">
                 <span className="text-neutral font-semibold text-lg">
-                  Crowdfunding Progress{" 49%"}
+                  Crowdfunding Progress {Math.round(progressPercentage)}%
                 </span>
                 <span className="text-neutral font-bold text-xl">
                   R {currentAmount.toLocaleString()} / R {goal.toLocaleString()}
@@ -418,49 +375,6 @@ export default function HeroSection() {
                 <Heart className="mr-3 text-xl" />
                 Donate Now
               </Button>
-            </motion.div>
-
-            {/* Quick Navigation Links */}
-            <motion.div
-              className="text-right mt-6"
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, delay: 1.2 }}
-            >
-              <div className="flex justify-end gap-4 text-sm">
-                <button
-                  onClick={() =>
-                    document
-                      .getElementById("about")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                  className="text-primary hover:text-primary/80 underline transition-colors"
-                >
-                  Our Story
-                </button>
-                <span className="text-gray-400">•</span>
-                <button
-                  onClick={() =>
-                    document
-                      .getElementById("impact")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                  className="text-primary hover:text-primary/80 underline transition-colors"
-                >
-                  Our Impact
-                </button>
-                <span className="text-gray-400">•</span>
-                <button
-                  onClick={() =>
-                    document
-                      .getElementById("donate")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                  className="text-primary hover:text-primary/80 underline transition-colors"
-                >
-                  How to Help
-                </button>
-              </div>
             </motion.div>
           </div>
         </div>
