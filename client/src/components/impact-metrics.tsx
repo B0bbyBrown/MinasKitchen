@@ -191,7 +191,7 @@ export default function ImpactMetrics() {
             </a>
             <span className="text-gray-400">•</span>
             <a
-              href="mailto:minaskitchensedgefield@gmail.com"
+              href="mailto:Admin@minaskitchen.co.za"
               className="text-primary hover:text-primary/80 underline transition-colors"
             >
               Contact Us

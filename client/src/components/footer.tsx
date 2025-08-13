@@ -79,7 +79,7 @@ export default function Footer() {
             <ul className="space-y-1 text-black text-sm">
               <li>Smutsville, Sedgefield</li>
               <li>Western Cape, South Africa</li>
-              <li>minaskitchensedgefield@gmail.com</li>
+              <li>Admin@minaskitchen.co.za</li>
             </ul>
           </div>
 

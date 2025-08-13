@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function ContactSection() {
   const handleEmailClick = () => {
-    window.open("mailto:shulka@curiouscatcreative.com", "_blank");
+    window.open("mailto:Admin@minaskitchen.co.za", "_blank");
   };
 
   const handleBackaBuddyClick = () => {
@@ -57,7 +57,7 @@ export default function ContactSection() {
                 className="inline-flex items-center text-secondary font-semibold hover:text-white transition-colors"
               >
                 <Mail className="mr-2" />
-                minaskitchensedgefield@gmail.com
+                Admin@minaskitchen.co.za
               </button>
             </motion.div>
           </div>
