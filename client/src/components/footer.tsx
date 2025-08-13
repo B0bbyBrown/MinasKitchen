@@ -9,7 +9,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-textPrimary text-white py-12">
+    <footer className="bg-textPrimary text-black py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-5 gap-8">
           {/* Brand Section - spans 2 columns */}
@@ -26,7 +26,7 @@ export default function Footer() {
                 <h3 className="font-bold text-xl">Mina's Kitchen</h3>
               </div>
             </div>
-            <p className="text-gray-400 mb-4 max-w-md">
+            <p className="text-black mb-4 max-w-md">
               Nourishing Smutsville's future, one meal at a time. Join us in
               feeding 500 children every Saturday and building a stronger South
               Africa.
@@ -34,10 +34,10 @@ export default function Footer() {
           </div>
           {/* Quick Links Section - 1 column */}
           <div className="md:col-span-1">
-            <h4 className="font-semibold text-lg mb-4 text-gray-600">
+            <h4 className="font-semibold text-lg mb-4 text-black">
               Quick Links
             </h4>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-2 text-black">
               <li>
                 <button
                   onClick={() => scrollToSection("about")}
@@ -75,10 +75,8 @@ export default function Footer() {
           </div>
           {/* Contact Section - 1 column */}
           <div className="md:col-span-1">
-            <h4 className="font-semibold text-lg mb-4 text-gray-600">
-              Contact
-            </h4>
-            <ul className="space-y-1 text-gray-400 text-sm">
+            <h4 className="font-semibold text-lg mb-4 text-black">Contact</h4>
+            <ul className="space-y-1 text-black text-sm">
               <li>Smutsville, Sedgefield</li>
               <li>Western Cape, South Africa</li>
               <li>minaskitchensedgefield@gmail.com</li>
@@ -87,16 +85,14 @@ export default function Footer() {
 
           {/* Follow Us Section - 1 column */}
           <div className="md:col-span-1">
-            <h4 className="font-semibold text-lg mb-4 text-gray-600">
-              Follow Us
-            </h4>
+            <h4 className="font-semibold text-lg mb-4 text-black">Follow Us</h4>
             <div className="flex space-x-4">
               <a
                 href="https://www.tiktok.com/@minaskitchensa"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TikTok"
-                className="text-gray-400 hover:text-primary text-2xl transition-colors"
+                className="text-black hover:text-primary text-2xl transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +108,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-black text-sm">
           <p>
             &copy; 2025 Mina's Kitchen. All rights reserved. • Founded April
             2024

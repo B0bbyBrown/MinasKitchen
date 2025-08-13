@@ -128,7 +128,7 @@ export default function ChallengeSection() {
                 />
               </div>
               <p className="text-sm mt-3 opacity-90">
-                {Math.round(challengePercentage)}% to unlock milestone rewards
+                49% to unlock milestone rewards
               </p>
             </motion.div>
 
