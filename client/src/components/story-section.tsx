@@ -16,7 +16,7 @@ export default function StorySection() {
             viewport={{ once: true }}
           >
             <h2 className="font-bold text-4xl md:text-5xl mb-4 text-secondary">
-              Our Story
+              Our Story: The Spark that Ignited a Community
             </h2>
             <p className="text-xl text-black max-w-3xl mx-auto">
               From Struggle to Community Impact
@@ -49,21 +49,17 @@ export default function StorySection() {
                   className="font-bold text-2xl mb-4"
                   style={{ color: "hsl(var(--secondary))" }}
                 >
-                  From Struggle to Strength
+                  The Beginning
                 </h3>
                 <p className="text-black leading-relaxed">
-                  Mina lost her restaurant job during COVID and turned to
-                  cleaning to support her three children. Hired by{" "}
-                  <a
-                    href="https://cat.design"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-secondary hover:text-white underline transition-colors"
-                  >
-                    Cat.Design
-                  </a>{" "}
-                  founders in 2023, her exceptional cooking skills inspired the
-                  Easter meal that started it all.
+                  What began as a simple act of kindness on Easter Sunday 2024
+                  has since blossomed into a vital lifeline for the Smutsville
+                  community. It all started when a young entrepreneurial couple,
+                  who had recently moved to Sedgefield, partnered with their
+                  housekeeper, Mina. Inspired by Mina's long-held dream of
+                  becoming a chef and their shared commitment to the development
+                  of South Africa's youth, they sponsored a hearty three-course
+                  meal for 100 children in the local township.
                 </p>
               </motion.div>
 
@@ -78,13 +74,15 @@ export default function StorySection() {
                   className="font-bold text-2xl mb-4"
                   style={{ color: "hsl(var(--secondary))" }}
                 >
-                  Living the Dream
+                  The Spark
                 </h3>
                 <p className="text-black leading-relaxed">
-                  Now leading a team of 10 local women, Mina has transformed
-                  from housekeeper to head chef and community leader. Every
-                  Saturday, she coordinates the preparation of 500 nutritious
-                  meals, bringing hope and nourishment to Smutsville's children.
+                  The menu that day—braai'ed chicken, potato salad, savoury rice
+                  and malva pudding—was more than just food; it was a symbol of
+                  hope. The overwhelming gratitude of those children, who were
+                  simply moved by the knowledge that someone cared, ignited a
+                  spark that could not be extinguished. What was intended as a
+                  once-off event quickly became a weekly mission.
                 </p>
               </motion.div>
 
@@ -99,13 +97,39 @@ export default function StorySection() {
                   className="font-bold text-2xl mb-4"
                   style={{ color: "hsl(var(--secondary))" }}
                 >
-                  Ripple Effect
+                  Growing Impact
                 </h3>
                 <p className="text-black leading-relaxed">
-                  What began as one act of kindness has created employment for
-                  10 women, fed hundreds of children, and sparked community
-                  initiatives like children organizing street clean-ups while
-                  waiting for their meals.
+                  From that day forward, Mina's Kitchen has grown into a
+                  powerful force for change. Today, we proudly feed 500 children
+                  every Saturday, having served over 12,000 nourishing meals in
+                  our first year alone.
+                </p>
+              </motion.div>
+
+              <motion.div
+                className="bg-white/10 backdrop-blur-sm rounded-2xl p-6"
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7, delay: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <h3
+                  className="font-bold text-2xl mb-4"
+                  style={{ color: "hsl(var(--secondary))" }}
+                >
+                  Mina's Journey
+                </h3>
+                <p className="text-black leading-relaxed">
+                  Mina's journey is at the heart of our story. A talented cook
+                  with years of experience in local restaurant kitchens, she
+                  lost her job during the COVID-19 pandemic and turned to
+                  cleaning to support her three children. Hired by our founders
+                  in 2023, her impressive culinary skills inspired the very
+                  first Easter meal that set everything in motion. Today, she is
+                  not just a chef living her dream; she is a leader, a mentor,
+                  and the driving force behind a team of local women who are
+                  changing lives, one meal at a time.
                 </p>
               </motion.div>
             </div>
